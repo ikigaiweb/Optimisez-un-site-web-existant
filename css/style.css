@@ -15,7 +15,8 @@
     --a-color:#575757; /* Couleur utilisé pour les a */ 
     --black-background:rgba(165, 147, 99, 0.7); /* une sorte de doré clair*/ 
     --dark-slate-blue:#364577;  /* un bleu foncé */ 
-  }
+    --whiteColorContrast: #9D6043; /* Bonne couleur contraste pour le blanc */
+}
   * {
     box-sizing: border-box;
   }
@@ -300,6 +301,9 @@ font-weight: 500;
     color: var(--primaryColor);
 }
 /* _____________________CONTACT______________________  */ 
+.contact h1 {
+    color: var(--whiteColorContrast);
+}
 .formulaire {
     width: 800px;
     padding: 50px 100px 50px 100px;
@@ -307,6 +311,25 @@ font-weight: 500;
 }
 .formulaire p {
     margin-top: 25px;
+}
+.envoyer {
+    background-color: var(--primaryColor);
+    margin: 22px 5px 5px 0;
+    padding: 12px 28px 12px 28px;
+    font-size: 16px;
+    font-weight: 700;
+    outline: none;
+    transition: all .3s ease-in-out;
+    border-width: 2px;
+    border-style: outset;
+    border-color: buttonborder;
+    border-image: initial;
+}
+.envoyer:hover {
+    background-color: var(--primaryColorHover);
+}
+.envoyer:active {
+    border-style: inset;
 }
 /* ________________FOOTER _________________ */ 
 footer .fa {
