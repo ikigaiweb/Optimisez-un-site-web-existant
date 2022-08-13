@@ -101,7 +101,7 @@ nav img {
 }
 /* ____________________SECTIONS _____________________*/
 .entete {
-    background-image: url(img/texture-paper.png), url(img/agence-la-panthere.jpg);
+    background-image: url(https://ikigaiweb.github.io/Optimisez-un-site-web-existant/img/texture-paper.png), url(img/agence-la-panthere.jpg);
     background-attachment: fixed;
     overflow:hidden;
     position: relative;
