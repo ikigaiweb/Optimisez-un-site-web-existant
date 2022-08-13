@@ -104,6 +104,9 @@ nav ul li {
 nav img {
     align-self: center;
 }
+nav a {
+    color: black;
+}
 /* ____________________SECTIONS _____________________*/
 .entete {
     background-image: url(https://ikigaiweb.github.io/Optimisez-un-site-web-existant/img/texture-paper.png), url(https://ikigaiweb.github.io/Optimisez-un-site-web-existant/img/agence-la-panthere.jpg) ;
@@ -116,7 +119,17 @@ nav img {
     align-items: center;
     padding: 100px 0 100px 0;
 }
-
+.entete__Contact {
+    background-image: url(https://ikigaiweb.github.io/Optimisez-un-site-web-existant/img/texture-paper.png) ;
+background-color: var(--primaryColor);
+}
+.h-Un {
+    color: white;
+    font-size: 32px;
+    font-weight: 600;
+    margin-top: 30px;
+    margin-bottom: 0;
+}
 /* BOUTON CONTACT */
 .button {
     background-color: var(--primaryColor); 
@@ -286,12 +299,20 @@ font-weight: 500;
 .cta h2 {
     color: var(--primaryColor);
 }
-
+/* _____________________CONTACT______________________  */ 
+.formulaire {
+    width: 800px;
+    padding: 50px 100px 50px 100px;
+    margin: 0 auto 0 auto;
+}
+.formulaire p {
+    margin-top: 25px;
+}
 /* ________________FOOTER _________________ */ 
 footer .fa {
     color: var(--secondaryColor);
     font-size: 30px;
-    margin: 4px 40px 20px 40px;
+    margin: 15px 40px 20px 40px;
 }
 footer .fa:hover {
     color:white;
@@ -311,3 +332,9 @@ footer div {
     
 }
 
+@media  only screen and  (max-width: 767px){
+    p {
+        font-size: 12px;
+    }
+    
+}
