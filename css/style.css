@@ -47,27 +47,32 @@ footer {
     padding-top: 20px;
 }
 h1, h2, h3, h4, a, p {
-    font-family: "helvetica";
+    font-family: "helvetica", "Helvetica Neue", Arial, sans-serif;
     font-weight: 400;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    line-height: 1.1;
+    line-height: 1.42;
     text-align: center;
 }
 h1 {
     font-size: 32px;
-    color: var(--primaryColor)
+    color: var(--primaryColor);
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 h2 {
     font-size: 22px;
     line-height: 1.4em;
-    color: #575757!important;
+    color: #575757;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 h3 {
     font-size: 15px;
     text-transform: uppercase;
     font-weight: 700;
-    color: #333333!important;
+    margin-top: 10px !important;
+    margin-bottom: 20px;
+    color: #333333;
 }
 p {
     font-size: 11px;
@@ -101,19 +106,20 @@ nav img {
 }
 /* ____________________SECTIONS _____________________*/
 .entete {
-    background-image: url(https://ikigaiweb.github.io/Optimisez-un-site-web-existant/img/texture-paper.png), url(https://ikigaiweb.github.io/Optimisez-un-site-web-existant/img/agence-la-panthere.jpg);
+    background-image: url(https://ikigaiweb.github.io/Optimisez-un-site-web-existant/img/texture-paper.png), url(https://ikigaiweb.github.io/Optimisez-un-site-web-existant/img/agence-la-panthere.jpg) ;
     background-attachment: fixed;
+    background-position: top;
     overflow:hidden;
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 60px 0 60px 0;
+    padding: 100px 0 100px 0;
 }
+
 /* BOUTON CONTACT */
 .button {
     background-color: var(--primaryColor); 
-    color: #FFFFFF;
     margin-top: 22px;
     text-transform: uppercase;
     padding: 12px 28px 12px 28px;
@@ -124,9 +130,9 @@ nav img {
     background-color: var(--primaryColorHover);
 }
 .button a {
-    font-size: 16px;
-    font-weight: 700;
-    color: white;
+    font-size: 17px;
+    font-weight: 800;
+    color: #2F2F2F;
 } 
 /* Section services */
 .services {
@@ -136,6 +142,10 @@ nav img {
     display: flex;
     flex-direction: column;
     padding: 50px 0 50px 0;
+}
+.services h2 {
+    max-width: 630px;
+    margin: 0 auto 10px auto;
 }
 .lesDessins {
     display: flex;
@@ -204,6 +214,7 @@ font-weight: 500;
 .what-I-Do {
     background-image: url(https://ikigaiweb.github.io/Optimisez-un-site-web-existant/img/texture-paper.png), url(https://ikigaiweb.github.io/Optimisez-un-site-web-existant/img/image-de-presentation.jpg);
     background-attachment: fixed;
+    background-position: top;
     overflow:hidden;
     position: relative;
     display: flex;
@@ -217,6 +228,8 @@ font-weight: 500;
     max-width: 600px;
     margin: auto;
     padding: 40px;
+    background-color: rgba(165, 147, 99, 0.7);
+    background-image: url(https://ikigaiweb.github.io/Optimisez-un-site-web-existant/img/texture-paper.png)
 }
 .what-I-Do__Centre a {
     transition: all .3s ease-in-out;
@@ -225,6 +238,12 @@ font-weight: 500;
     font-size: 11px;
     text-align: center;
     margin: 0 auto 0 auto;
+}
+.what-I-Do h2 {
+    color: var(--primaryColor);
+}
+.what-I-Do p, a {
+    color: white;
 }
 /* Section Portfolio */
 .portfolio {
@@ -239,7 +258,7 @@ font-weight: 500;
     display: flex;
     justify-content: space-between;
     max-width: 600px;
-    margin: 0 auto 0 auto;
+    margin: 50px auto 44px auto;
 }
 .portfolio__Centre__Card {
     display: flex;
@@ -262,7 +281,10 @@ font-weight: 500;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 60px 0 60px 0;
+    padding: 100px 0 100px 0;
+}
+.cta h2 {
+    color: var(--primaryColor);
 }
 
 /* ________________FOOTER _________________ */ 
