@@ -1,0 +1,290 @@
+:root {
+    --primaryColor: #F3976C; /* Couleur principale */
+    --primaryColorHover:#c27956; /* Couleur principale quand la souris passe dessus */
+    --secondaryColor: #fcd5c4; /* Couleur secondaire */
+    --tertiaryColor: #171717;  /* Couleur tertiaire  */
+    --whiteTransparent02: rgba(255, 255, 255,0.2); /* Blanc tres transparent */
+    --whiteTransparent06: rgba(255, 255, 255,0.6); /* Blanc un peu transparent */
+    --whiteTransparent09: rgba(255, 255, 255,0.9); /* Blanc avec une pointe de transparence */
+    --grey01:rgba(0, 0, 0,0.1); /* Gris tres clair transparent */
+    --grey03:rgba(0, 0, 0,0.3); /* Gris clair transparent */
+    --grey05:rgba(0, 0, 0,0.5); /* Gris transparent */
+    --grey07:rgba(0, 0, 0,0.7); /* Gris foncé une pointe de transparence */
+    --grey09:rgba(0, 0, 0,0.9); /* Noir avec une pointe de transparence */
+    --a-colorHover:#484848; /* Gris utilisé pour le a:hover */
+    --a-color:#575757; /* Couleur utilisé pour les a */ 
+    --black-background:rgba(165, 147, 99, 0.7); /* une sorte de doré clair*/ 
+    --dark-slate-blue:#364577;  /* un bleu foncé */ 
+  }
+  * {
+    box-sizing: border-box;
+  }
+body {
+    margin: 0;
+    padding: 0;
+    background: white;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px 0 20px;;
+    max-width: 1000px;
+    height: 50px;
+}
+footer {
+    background-color: var(--primaryColor);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+}
+h1, h2, h3, h4, a, p {
+    font-family: "helvetica";
+    font-weight: 400;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    line-height: 1.1;
+    text-align: center;
+}
+h1 {
+    font-size: 32px;
+    color: var(--primaryColor)
+}
+h2 {
+    font-size: 22px;
+    line-height: 1.4em;
+    color: #575757!important;
+}
+h3 {
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #333333!important;
+}
+p {
+    font-size: 11px;
+    margin: 0 0 10px;
+}
+a {
+    color: var(--a-color);
+    text-decoration: none;
+    font-size: 16px;
+}
+a:hover {
+    color: var(--a-colorHover);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* _________________________NAV___________________*/
+nav ul {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+}
+nav ul li {
+    padding: 15px;  
+    list-style: none;
+    vertical-align: middle;
+}
+nav img {
+    align-self: center;
+}
+/* ____________________SECTIONS _____________________*/
+.entete {
+    background-image: url(img/texture-paper.png), url(img/agence-la-panthere.jpg);
+    background-attachment: fixed;
+    overflow:hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 0 60px 0;
+}
+/* BOUTON CONTACT */
+.button {
+    background-color: var(--primaryColor); 
+    color: #FFFFFF;
+    margin-top: 22px;
+    text-transform: uppercase;
+    padding: 12px 28px 12px 28px;
+    border-radius: 20px;
+    transition: all 0.3s ease-in-out;
+}
+.button:hover {
+    background-color: var(--primaryColorHover);
+}
+.button a {
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+} 
+/* Section services */
+.services {
+    background-color: white;
+    max-width: 1000px;
+    margin:0 auto 0 auto ;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 0 50px 0;
+}
+.lesDessins {
+    display: flex;
+    justify-content: space-around;
+    max-width: 800px;
+    margin: 0 auto 0 auto;
+}
+.services > .card {
+    width: 30%;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    padding: 0 15px 0 15px;
+}
+.card__Head {
+    display: flex;
+    justify-content: center;
+}
+.card__Body {
+    display: flex;  
+}
+.et-icon-browser, .et-icon-edit, .et-icon-presentation {
+    font-family: et-line;
+    speak-as: none;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    display: inline-block;
+    color: var(--dark-slate-blue);
+    border-color: var(--dark-slate-blue);
+    margin-bottom: 14px;
+    margin-top: 24px;
+    text-shadow: 0 1px 2px rgb(0 0 0 / 30%);
+    font-size: 60px
+}
+.et-icon-browser {
+    content: "\e00c"
+}
+.et-icon-presentation {
+    content: "\e00e"
+}
+.et-icon-edit {
+    content: "\e01c"
+}
+.services figure {
+    margin: 80px auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 550px;
+    text-align: center;
+    text-decoration: none;
+}
+blockquote {
+padding: 10px 20px 0 20px;
+margin:0;
+border-left: 0;
+font-weight: 500;
+}
+/* Section What I do */
+.what-I-Do {
+    background-image: url(img/texture-paper.png), url(/img/image-de-presentation.jpg);
+    background-attachment: fixed;
+    overflow:hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 0 100px 0;
+}
+.what-I-Do__Centre {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: auto;
+    padding: 40px;
+}
+.what-I-Do__Centre a {
+    transition: all .3s ease-in-out;
+    font-weight: 900;
+    text-decoration: underline;
+    font-size: 11px;
+    text-align: center;
+    margin: 0 auto 0 auto;
+}
+/* Section Portfolio */
+.portfolio {
+    background-image: url(img/lines-h2-bg.png);
+    padding: 100px 0 100px 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.portfolio__Centre {
+    display: flex;
+    justify-content: space-between;
+    max-width: 600px;
+    margin: 0 auto 0 auto;
+}
+.portfolio__Centre__Card {
+    display: flex;
+    width: 300px;
+    flex-direction: column;
+}
+.portfolio__Centre img {
+    width: 270px;
+}
+.portfolio__Centre img:hover {
+    opacity: 0.6;
+    -webkit-animation-fill-mode: none;
+    animation-fill-mode: none;
+}
+.cta {
+    background-image: url(img/texture-paper.png), url(img/agence-la-panthere.jpg);
+    background-attachment: fixed;
+    overflow:hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 0 60px 0;
+}
+
+/* ________________FOOTER _________________ */ 
+footer .fa {
+    color: var(--secondaryColor);
+    font-size: 30px;
+    margin: 4px 40px 20px 40px;
+}
+footer .fa:hover {
+    color:white;
+}
+footer p {
+    width: 100%;
+}
+footer div {
+    display: flex;
+    justify-content: center;
+}
+
+
+@media  only screen and (min-width: 768px)and (max-width: 992px){
+    
+    
+}
+

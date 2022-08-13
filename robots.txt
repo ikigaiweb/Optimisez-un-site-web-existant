@@ -1,2 +1,4 @@
 User-agent:*
-Disallow :
+Disallow: 
+
+Sitemap: https://ikigaiweb.github.io/Optimisez-un-site-web-existant/sitemap.xml
