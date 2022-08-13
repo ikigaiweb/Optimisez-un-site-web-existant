@@ -298,6 +298,7 @@ footer .fa:hover {
 }
 footer p {
     width: 100%;
+    color: var(--tertiaryColor);
 }
 footer div {
     display: flex;
