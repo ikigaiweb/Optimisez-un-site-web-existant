@@ -101,7 +101,7 @@ nav img {
 }
 /* ____________________SECTIONS _____________________*/
 .entete {
-    background-image: url(https://ikigaiweb.github.io/Optimisez-un-site-web-existant/img/texture-paper.png), url(img/agence-la-panthere.jpg);
+    background-image: url(https://ikigaiweb.github.io/Optimisez-un-site-web-existant/img/texture-paper.png), url(https://ikigaiweb.github.io/Optimisez-un-site-web-existant/img/agence-la-panthere.jpg);
     background-attachment: fixed;
     overflow:hidden;
     position: relative;
@@ -202,7 +202,7 @@ font-weight: 500;
 }
 /* Section What I do */
 .what-I-Do {
-    background-image: url(img/texture-paper.png), url(/img/image-de-presentation.jpg);
+    background-image: url(https://ikigaiweb.github.io/Optimisez-un-site-web-existant/img/texture-paper.png), url(https://ikigaiweb.github.io/Optimisez-un-site-web-existant/img/image-de-presentation.jpg);
     background-attachment: fixed;
     overflow:hidden;
     position: relative;
@@ -228,7 +228,7 @@ font-weight: 500;
 }
 /* Section Portfolio */
 .portfolio {
-    background-image: url(img/lines-h2-bg.png);
+    background-image: url(https://ikigaiweb.github.io/Optimisez-un-site-web-existant/img/lines-h2-bg.png);
     padding: 100px 0 100px 0;
     margin: 0;
     display: flex;
@@ -255,7 +255,7 @@ font-weight: 500;
     animation-fill-mode: none;
 }
 .cta {
-    background-image: url(img/texture-paper.png), url(img/agence-la-panthere.jpg);
+    background-image: url(https://ikigaiweb.github.io/Optimisez-un-site-web-existant/img/texture-paper.png), url(https://ikigaiweb.github.io/Optimisez-un-site-web-existant/img/agence-la-panthere.jpg);
     background-attachment: fixed;
     overflow:hidden;
     position: relative;
