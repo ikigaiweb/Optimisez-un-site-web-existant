@@ -110,7 +110,7 @@ nav a {
 }
 /* ____________________SECTIONS _____________________*/
 .entete {
-    background-image: url(img/texture-paper.webp), url(img/agence-la-panthere.webp);
+    background-image: url(https://ikigaiweb.github.io/Optimisez-un-site-web-existant/img/texture-paper.webp), url(https://ikigaiweb.github.io/Optimisez-un-site-web-existant/img/agence-la-panthere.webp);
     background-attachment: fixed;
     background-position: top;
     overflow:hidden;
@@ -121,7 +121,7 @@ nav a {
     padding: 100px 0 100px 0;
 }
 .entete__Contact {
-    background-image: url(img/texture-paper.webp) ;
+    background-image: url(https://ikigaiweb.github.io/Optimisez-un-site-web-existant/img/texture-paper.webp) ;
 background-color: var(--primaryColor);
 }
 .h-Un {
@@ -226,7 +226,7 @@ font-weight: 500;
 }
 /* Section What I do */
 .what-I-Do {
-    background-image: url(img/texture-paper.webp), url(img/image-de-presentation.webp);
+    background-image: url(https://ikigaiweb.github.io/Optimisez-un-site-web-existant/img/texture-paper.webp), url(https://ikigaiweb.github.io/Optimisez-un-site-web-existant/img/image-de-presentation.webp);
     background-attachment: fixed;
     background-position: top;
     overflow:hidden;
@@ -243,7 +243,7 @@ font-weight: 500;
     margin: auto;
     padding: 40px;
     background-color: var(--black-background);
-    background-image: url(img/texture-paper.webp)
+    background-image: url(https://ikigaiweb.github.io/Optimisez-un-site-web-existant/img/texture-paper.webp)
 }
 .what-I-Do__Centre a {
     transition: all .3s ease-in-out;
@@ -288,7 +288,7 @@ font-weight: 500;
     animation-fill-mode: none;
 }
 .cta {
-    background-image: url(img/texture-paper.webp), url(img/agence-la-panthere.webp);
+    background-image: url(https://ikigaiweb.github.io/Optimisez-un-site-web-existant/img/texture-paper.webp), url(https://ikigaiweb.github.io/Optimisez-un-site-web-existant/img/agence-la-panthere.webp);
     background-attachment: fixed;
     overflow:hidden;
     position: relative;
