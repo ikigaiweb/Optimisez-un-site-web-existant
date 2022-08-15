@@ -13,7 +13,7 @@
     --grey09:rgba(0, 0, 0,0.9); /* Noir avec une pointe de transparence */
     --a-colorHover:#484848; /* Gris utilisé pour le a:hover */
     --a-color:#575757; /* Couleur utilisé pour les a */ 
-    --black-background:rgba(165, 147, 99, 0.7); /* une sorte de doré clair*/ 
+    --black-background:rgba(53, 52, 30, 0.9); /* une sorte de doré clair depuis changé en beaucoup + foncé */ 
     --dark-slate-blue:#364577;  /* un bleu foncé */ 
     --whiteColorContrast: #9D6043; /* Bonne couleur contraste pour le blanc */
 }
@@ -110,7 +110,7 @@ nav a {
 }
 /* ____________________SECTIONS _____________________*/
 .entete {
-    background-image: url(https://ikigaiweb.github.io/Optimisez-un-site-web-existant/img/texture-paper.png), url(https://ikigaiweb.github.io/Optimisez-un-site-web-existant/img/agence-la-panthere.jpg) ;
+    background-image: url(/img/texture-paper.webp), url(/img/agence-la-panthere.webp);
     background-attachment: fixed;
     background-position: top;
     overflow:hidden;
@@ -121,7 +121,7 @@ nav a {
     padding: 100px 0 100px 0;
 }
 .entete__Contact {
-    background-image: url(https://ikigaiweb.github.io/Optimisez-un-site-web-existant/img/texture-paper.png) ;
+    background-image: url(/img/texture-paper.webp) ;
 background-color: var(--primaryColor);
 }
 .h-Un {
@@ -226,7 +226,7 @@ font-weight: 500;
 }
 /* Section What I do */
 .what-I-Do {
-    background-image: url(https://ikigaiweb.github.io/Optimisez-un-site-web-existant/img/texture-paper.png), url(https://ikigaiweb.github.io/Optimisez-un-site-web-existant/img/image-de-presentation.jpg);
+    background-image: url(/img/texture-paper.webp), url(/img/image-de-presentation.webp);
     background-attachment: fixed;
     background-position: top;
     overflow:hidden;
@@ -242,8 +242,8 @@ font-weight: 500;
     max-width: 600px;
     margin: auto;
     padding: 40px;
-    background-color: rgba(165, 147, 99, 0.7);
-    background-image: url(https://ikigaiweb.github.io/Optimisez-un-site-web-existant/img/texture-paper.png)
+    background-color: var(--black-background);
+    background-image: url(/img/texture-paper.webp)
 }
 .what-I-Do__Centre a {
     transition: all .3s ease-in-out;
@@ -288,7 +288,7 @@ font-weight: 500;
     animation-fill-mode: none;
 }
 .cta {
-    background-image: url(https://ikigaiweb.github.io/Optimisez-un-site-web-existant/img/texture-paper.png), url(https://ikigaiweb.github.io/Optimisez-un-site-web-existant/img/agence-la-panthere.jpg);
+    background-image: url(/img/texture-paper.webp), url(/img/agence-la-panthere.webp);
     background-attachment: fixed;
     overflow:hidden;
     position: relative;
