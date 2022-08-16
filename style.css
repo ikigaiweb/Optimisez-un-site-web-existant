@@ -1,0 +1,681 @@
+:root {
+    --primaryColor: #f3976c; /* Couleur principale */
+    --primaryColorHover: #c27956; /* Couleur principale quand la souris passe dessus */
+    --secondaryColor: #fcd5c4; /* Couleur secondaire */
+    --tertiaryColor: #171717; /* Couleur tertiaire  */
+    --whiteTransparent02: rgba(255, 255, 255, 0.2); /* Blanc tres transparent */
+    --whiteTransparent06: rgba(255, 255, 255, 0.6); /* Blanc un peu transparent */
+    --whiteTransparent09: rgba(
+      255,
+      255,
+      255,
+      0.9
+    ); /* Blanc avec une pointe de transparence */
+    --grey01: rgba(0, 0, 0, 0.1); /* Gris tres clair transparent */
+    --grey03: rgba(0, 0, 0, 0.3); /* Gris clair transparent */
+    --grey05: rgba(0, 0, 0, 0.5); /* Gris transparent */
+    --grey07: rgba(0, 0, 0, 0.7); /* Gris foncé une pointe de transparence */
+    --grey09: rgba(0, 0, 0, 0.9); /* Noir avec une pointe de transparence */
+    --a-colorHover: #484848; /* Gris utilisé pour le a:hover */
+    --a-color: #575757; /* Couleur utilisé pour les a */
+    --black-background: rgba(
+      53,
+      52,
+      30,
+      0.9
+    ); /* une sorte de doré clair depuis changé en beaucoup + foncé */
+    --dark-slate-blue: #364577; /* un bleu foncé */
+    --whiteColorContrast: #9d6043; /* Bonne couleur contraste pour le blanc */
+  }
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    background: white;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  a,
+  button {
+    transition: all 0.3s ease-in-out;
+    outline: none !important;
+  }
+  nav {
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px 0 20px;
+    max-width: 1000px;
+    min-height: 50px;
+  }
+  footer {
+    background-color: var(--primaryColor);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  a,
+  p {
+    font-family: "helvetica", "Helvetica Neue", Arial, sans-serif;
+    font-weight: 400;
+    line-height: 1.42;
+    text-align: center;
+    z-index: 7;
+  }
+  h1 {
+    font-size: 32px;
+    color: var(--primaryColor);
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  h2 {
+    font-size: 22px;
+    line-height: 1.4em;
+    color: #575757;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  h3 {
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-top: 10px !important;
+    margin-bottom: 20px;
+    color: #333333;
+  }
+  p {
+    font-size: 11px;
+    margin: 0 0 10px;
+  }
+  a {
+    color: var(--a-color);
+    text-decoration: none;
+    font-size: 16px;
+  }
+  a:hover {
+    color: var(--a-colorHover);
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* _________________________NAV___________________*/
+  nav ul {
+    flex-direction: row;
+    margin: 0;
+  }
+  nav ul li {
+    list-style: none;
+    vertical-align: middle;
+  }
+  nav img {
+    align-self: center;
+  }
+  nav a {
+    color: black;
+  }
+  .imgPanthereMonochrome {
+    width: 217px;
+    height: 40px;
+  }
+  
+  /* ____________________SECTIONS _____________________*/
+  .entete {
+    background-image: url(https://ikigaiweb.github.io/Optimisez-un-site-web-existant/img/agence-la-panthere.webp);
+    background-attachment: fixed;
+    background-position: top;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 0 100px 0;
+  }
+  .entete__Contact {
+    background-image: url(https://ikigaiweb.github.io/Optimisez-un-site-web-existant/img/texture-paper.webp);
+    background-color: var(--primaryColor);
+  }
+  .h-Un {
+    color: white;
+    font-size: 32px;
+    font-weight: 600;
+    margin-top: 30px;
+    margin-bottom: 0;
+  }
+  
+  .texture-paper::before {
+    background: url("/img/texture-paper.webp");
+    background-size: 280px 280px;
+  }
+  .bloc-bg-texture::before {
+    content: "";
+    background-size: 280px 280px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  .bg-banniere {
+    background-image: url("/img/agence-la-panthere.webp");
+  }
+  .bgc-dark-slate-blue {
+    background-color: #364577;
+  }
+  .entete img {
+    z-index: 4;
+  }
+  .imgLogo {
+    width: 100px;
+    height: 100px;
+  }
+  /* BOUTON CONTACT */
+  .button {
+    background-color: var(--primaryColor);
+    margin-top: 22px;
+    text-transform: uppercase;
+    padding: 12px 28px 12px 28px;
+    border-radius: 20px;
+    transition: all 0.3s ease-in-out;
+    z-index: 7;
+  }
+  .button:hover {
+    background-color: var(--primaryColorHover);
+  }
+  .button a {
+    font-size: 17px;
+    font-weight: 800;
+    color: #2f2f2f;
+  }
+  /* Section services */
+  .services {
+    background-color: white;
+    max-width: 1000px;
+    margin: 0 auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 5% 50px 5%;
+  }
+  .services h2 {
+    max-width: 630px;
+    margin: 0 auto 10px auto;
+  }
+  .lesDessins {
+    display: flex;
+    justify-content: space-around;
+    max-width: 800px;
+    margin: 0 auto 0 auto;
+  }
+  .services > .card {
+    width: 30%;
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    padding: 0 15px 0 15px;
+  }
+  .card__Head {
+    display: flex;
+    justify-content: center;
+  }
+  .card__Body {
+    display: flex;
+  }
+  .et-icon-browser,
+  .et-icon-edit,
+  .et-icon-presentation {
+    font-family: et-line;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    display: inline-block;
+    color: var(--dark-slate-blue);
+    border-color: var(--dark-slate-blue);
+    margin-bottom: 14px;
+    margin-top: 24px;
+    text-shadow: 0 1px 2px rgb(0 0 0 / 30%);
+    font-size: 60px;
+  }
+  .et-icon-browser {
+    content: "\e00c";
+  }
+  .et-icon-presentation {
+    content: "\e00e";
+  }
+  .et-icon-edit {
+    content: "\e01c";
+  }
+  .services figure {
+    margin: 80px auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 550px;
+    text-align: center;
+    text-decoration: none;
+  }
+  blockquote {
+    padding: 10px 20px 0 20px;
+    margin: 0;
+    border-left: 0;
+    font-weight: 500;
+  }
+  /* Section What I do */
+  .what-I-Do {
+    background-image: url(https://ikigaiweb.github.io/Optimisez-un-site-web-existant/img/image-de-presentation.webp);
+    background-attachment: fixed;
+    background-position: top;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 0 100px 0;
+  }
+  .what-I-Do__Centre {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: auto;
+    padding: 40px;
+    background-color: var(--black-background);
+    background-image: url(https://ikigaiweb.github.io/Optimisez-un-site-web-existant/img/texture-paper.webp);
+  }
+  .what-I-Do__Centre a {
+    transition: all 0.3s ease-in-out;
+    font-weight: 900;
+    text-decoration: underline;
+    font-size: 11px;
+    text-align: center;
+    margin: 0 auto 0 auto;
+  }
+  .what-I-Do h2 {
+    color: var(--primaryColor);
+  }
+  .what-I-Do p,
+  a {
+    color: white;
+  }
+  /* Section Portfolio */
+  .portfolio {
+    background-image: url(https://ikigaiweb.github.io/Optimisez-un-site-web-existant/img/lines-h2-bg.png);
+    padding: 100px 5% 100px 5%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .portfolio__Centre {
+    display: flex;
+    justify-content: space-between;
+    max-width: 600px;
+    margin: 50px auto 44px auto;
+  }
+  .portfolio__Centre__Card {
+    display: flex;
+    width: 300px;
+    flex-direction: column;
+  }
+  .portfolio__Centre img {
+    width: 270px;
+    height: 270px;
+  }
+  .portfolio__Centre img:hover {
+    opacity: 0.6;
+    -webkit-animation-fill-mode: none;
+    animation-fill-mode: none;
+  }
+  a[data-lightbox] {
+    position: relative;
+    display: block;
+    text-align: center;
+  }
+  a[data-lightbox]:hover::before {
+    content: "+";
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
+      Helvetica, Arial;
+    font-size: 32px;
+    width: 50px;
+    height: 50px;
+    margin-left: -25px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    font-weight: 100;
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+  }
+  
+  a[data-lightbox]:hover img {
+    opacity: 0.6;
+    -webkit-animation-fill-mode: none;
+    animation-fill-mode: none;
+  }
+  /* _____________________________CTA ______________________ */
+  .cta {
+    background-size: cover;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 0 100px 0;
+    width: 100%;
+    position: relative;
+  }
+  .cta h2 {
+    color: var(--primaryColor);
+    width: 90%;
+  }
+  /* _____________________CONTACT______________________  */
+  .contact h1 {
+    color: var(--whiteColorContrast);
+  }
+  .formulaire {
+    width: 800px;
+    padding: 50px 100px 50px 100px;
+    margin: 0 auto 0 auto;
+  }
+  .formulaire p {
+    margin-top: 25px;
+  }
+  .envoyer {
+    background-color: var(--primaryColor);
+    margin: 22px 5px 5px 0;
+    padding: 12px 28px 12px 28px;
+    font-size: 16px;
+    font-weight: 700;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+    border-width: 2px;
+    border-style: outset;
+    border-color: buttonborder;
+    border-image: initial;
+  }
+  .envoyer:hover {
+    background-color: var(--primaryColorHover);
+  }
+  .envoyer:active {
+    border-style: inset;
+  }
+  /* ________________FOOTER _________________ */
+  footer .fa {
+    color: var(--secondaryColor);
+    font-size: 30px;
+    margin: 15px 40px 20px 40px;
+  }
+  footer .fa:hover {
+    color: white;
+  }
+  footer p {
+    width: 100%;
+    color: var(--tertiaryColor);
+  }
+  footer div {
+    display: flex;
+    justify-content: center;
+  }
+  
+  @media only screen and (max-width: 992px) {
+  }
+  
+  @media only screen and (max-width: 767px) {
+    p {
+      font-size: 12px;
+    }
+    .lesDessins {
+      flex-direction: column;
+      max-width: 60%;
+    }
+    .portfolio__Centre {
+      flex-direction: column;
+      justify-content: center;
+    }
+    .entete {
+      background-attachment: scroll;
+      height: 320px;
+      padding: 5%;
+    }
+    .what-I-Do {
+      height: 450px;
+      padding: 5%;
+    }
+    .what-I-Do__Centre {
+      margin: auto;
+    }
+    nav {
+      width: 100%;
+      padding: 0;
+      margin-top: 10px;
+    }
+  }
+  .bloc {
+    width: 100%;
+    clear: both;
+    background: 50% 50% no-repeat;
+    padding: 0 50px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative;
+  }
+  
+  .bloc .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  
+  .bloc-lg {
+    padding: 100px 50px;
+  }
+  
+  .bloc-md {
+    padding: 50px;
+  }
+  
+  .bloc-sm {
+    padding: 20px 50px;
+  }
+  
+  .navbar {
+    margin-bottom: 0;
+    z-index: 1;
+  }
+  
+  .navbar-brand {
+    height: auto;
+    padding: 3px 15px;
+    font-size: 25px;
+    font-weight: normal;
+    font-weight: 600;
+    line-height: 44px;
+  }
+  
+  .navbar-brand img {
+    max-height: 200px;
+    margin: 0 5px 0 0;
+    display: inline;
+  }
+  
+  .navbar-brand img[src$="svg"] {
+    min-width: 100px;
+  }
+  
+  .nav-center .navbar-brand img {
+    margin: 0;
+  }
+  
+  .navbar .nav {
+    padding-top: 2px;
+    margin-right: -16px;
+    float: right;
+    z-index: 1;
+  }
+  
+  .nav > li {
+    float: left;
+    margin-top: 4px;
+    font-size: 16px;
+  }
+  
+  .navbar-nav .open .dropdown-menu > li > a {
+    text-align: inherit;
+  }
+  
+  .nav > li a:hover,
+  .nav > li a:focus {
+    background: transparent;
+  }
+  .navbar-toggle {
+    margin: 10px 10px 0 0;
+    border: 0px;
+  }
+  .navbar-toggle:hover {
+    background: transparent !important;
+  }
+  .navbar-toggle .icon-bar {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 26px;
+  }
+  .nav-invert .navbar .nav {
+    float: left;
+  }
+  .nav-invert .navbar-header,
+  .nav-invert .navbar-brand {
+    float: right;
+    position: relative;
+    z-index: 2;
+  }
+  @media (min-width: 768px) {
+    .nav > li .dropdown-menu a,
+    .nav > li .dropdown-menu a:hover {
+      color: #484848;
+    }
+    .nav-invert .site-navigation {
+      left: 0;
+      right: 0;
+    }
+    .nav-center {
+      text-align: center;
+    }
+    .nav-center .navbar-header {
+      width: 100%;
+    }
+    .nav-center .navbar-header,
+    .nav-center .navbar-brand,
+    .nav-center .nav > li {
+      float: none;
+      display: inline-block;
+    }
+    .nav-center .site-navigation {
+      position: relative;
+      width: 100%;
+      right: 0;
+      margin-right: 0px;
+      margin-top: 20px;
+    }
+    .nav-center.mini-nav .navbar-toggle {
+      float: none;
+      margin: 10px auto 0;
+    }
+  }
+  .nav > li > .dropdown a {
+    background: none !important;
+    display: block;
+    padding: 14px 15px;
+  }
+  nav .caret {
+    margin: 0 5px;
+  }
+  .med-width-whitespace {
+    max-width: 800px;
+    margin: auto auto auto auto;
+    box-shadow: 0px 0px 0px #000000;
+  }
+  .avatar {
+    box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.3);
+  }
+  @media (max-width: 992px) and (min-width: 768px) {
+    .navbar .nav {
+      max-width: 80%;
+    }
+    .nav-center.navbar .nav {
+      max-width: 100%;
+    }
+  }
+  
+  @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    .b-parallax {
+      background-attachment: scroll;
+    }
+  }
+  @media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+    .b-parallax {
+      background-attachment: scroll;
+    }
+  }
+  @media (max-width: 767px) {
+    .b-parallax {
+      background-attachment: scroll;
+    }
+    .navbar .nav {
+      padding-top: 0;
+      border-top: 1px solid rgba(0, 0, 0, 0.2);
+      float: none !important;
+    }
+    .navbar.row {
+      margin-left: 0;
+      margin-right: 0;
+    }
+    .site-navigation {
+      position: inherit;
+      transform: none;
+      -webkit-transform: none;
+      -ms-transform: none;
+    }
+    .nav > li {
+      margin-top: 0;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      background: rgba(0, 0, 0, 0.05);
+      text-align: left;
+      padding-left: 15px;
+      width: 100%;
+    }
+    .nav > li:hover {
+      background: rgba(0, 0, 0, 0.08);
+    }
+    .hero-nav {
+      left: -1px;
+      right: -1px;
+    }
+    .navbar-collapse {
+      padding: 0;
+      overflow-x: hidden;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+    }
+    .navbar-brand img {
+      max-height: 40px;
+      width: auto;
+    }
+  }
+  
