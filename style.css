@@ -133,7 +133,6 @@
   
   /* ____________________SECTIONS _____________________*/
   .entete {
-    background-image: url(https://ikigaiweb.github.io/Optimisez-un-site-web-existant/img/agence-la-panthere.webp);
     background-attachment: fixed;
     background-position: top;
     overflow: hidden;
@@ -156,7 +155,7 @@
   }
   
   .texture-paper::before {
-    background: url("/img/texture-paper.webp");
+    background: url("https://ikigaiweb.github.io/Optimisez-un-site-web-existant/img/texture-paper.webp");
     background-size: 280px 280px;
   }
   .bloc-bg-texture::before {
@@ -169,7 +168,7 @@
     right: 0;
   }
   .bg-banniere {
-    background-image: url("/img/agence-la-panthere.webp");
+    background-image: url("https://ikigaiweb.github.io/Optimisez-un-site-web-existant/img/agence-la-panthere.webp");
   }
   .bgc-dark-slate-blue {
     background-color: #364577;
@@ -372,6 +371,7 @@
   }
   /* _____________________________CTA ______________________ */
   .cta {
+    background: url("https://ikigaiweb.github.io/Optimisez-un-site-web-existant/img/agence-la-panthere.webp");
     background-size: cover;
     overflow: hidden;
     display: flex;
@@ -465,6 +465,9 @@
       width: 100%;
       padding: 0;
       margin-top: 10px;
+    }
+    nav > li > a {
+      padding: 0;
     }
   }
   .bloc {
