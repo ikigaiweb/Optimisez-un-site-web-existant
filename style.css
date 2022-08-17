@@ -38,10 +38,7 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
-  header {
-    display: flex;
-    justify-content: center;
-  }
+  
   a,
   button {
     transition: all 0.3s ease-in-out;
@@ -164,7 +161,7 @@
   }
   .bloc-bg-texture::before {
     content: "";
-    background-size: 280px 280px;
+    background-size: 20px 20px;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -334,6 +331,7 @@
     display: flex;
     width: 300px;
     flex-direction: column;
+    padding: 0 15px 0 15px;
   }
   .portfolio__Centre img {
     width: 270px;
